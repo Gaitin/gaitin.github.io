@@ -20,7 +20,7 @@ repository: https://github.com/Gaitin/gaitin.github.io
 # The base hostname & protocol for your site
 # For local test, please use http://localhost:4000
 # For production, use your github page url. ex. https://gaitin.github.io/
-url:https://gaitin.github.io/
+url: https://gaitin.github.io/
 
 ## Gem
 gems:
