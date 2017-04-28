@@ -1,8 +1,15 @@
+---
+layout: post
+title:  "Vue life cycle "
+date:   2017-04-28 15:57:35 +0800
+categories: Vue
+---
+
+#### React Native 生命周期
+![](https://cn.vuejs.org/images/lifecycle.png)
+
 # vue生命周期 #
 Vue实例有一个完整的生命周期，从开始创建、初始化数据、编译模板、挂载Dom、渲染→更新→渲染、卸载等一系列过程，我们称这是Vue的生命周期。通俗说就是Vue实例从创建到销毁的过程，就是生命周期。
-<center>
-![](https://cn.vuejs.org/images/lifecycle.png)
-</center>
 
 
 ## beforeCreate ##
