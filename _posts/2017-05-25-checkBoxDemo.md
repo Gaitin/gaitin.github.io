@@ -5,7 +5,7 @@ date:   2017-05-25 17:07:35 +0800
 categories: demo
 tags: [demo]
 ---
-### checkBoxDemo ###
+### checkBox练习 ###
 
 
 绑定合适的事件处理函数，实现以下逻辑：
@@ -30,7 +30,7 @@ tags: [demo]
 </head>
 <body>
 <!-- HTML结构 -->
-<form id="test-form" action="test" style="width: 300px;height: 300px;background-color: #eee">
+<form id="test-form" action="test" style="width: 300px;height: 300px;padding:20px;border: 1px solid #eee;">
     <legend>请选择想要学习的编程语言：</legend>
     <fieldset>
         <p><label class="selectAll"><input type="checkbox"> <span class="selectAll">全选</span><span class="deselectAll">全不选</span></label> <a href="javascript:;" class="invertSelect">反选</a></p>
@@ -118,7 +118,7 @@ tags: [demo]
 </script>
 </body>
 </html>
-
+    
 ### 代码 ###
 	<!DOCTYPE html>
 	<html lang="en">
@@ -128,7 +128,7 @@ tags: [demo]
 	</head>
 	<body>
 	<!-- HTML结构 -->
-	<form id="test-form" action="test" style="width: 300px;height: 300px;background-color: #eee">
+	<form id="test-form" action="test" style="width: 300px;height: 300px;padding:20px;border: 1px solid #eee;">
 	    <legend>请选择想要学习的编程语言：</legend>
 	    <fieldset>
 	        <p><label class="selectAll"><input type="checkbox"> <span class="selectAll">全选</span><span class="deselectAll">全不选</span></label> <a href="javascript:;" class="invertSelect">反选</a></p>

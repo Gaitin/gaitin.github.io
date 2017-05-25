@@ -5,7 +5,7 @@ date:   2017-04-28 15:57:35 +0800
 categories: Vue
 ---
 
-#### React Native 生命周期
+#### vue 生命周期
 ![](https://cn.vuejs.org/images/lifecycle.png)
 
 # vue生命周期 #
