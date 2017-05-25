@@ -22,6 +22,7 @@ tags: [demo]
 
 
 
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +33,7 @@ tags: [demo]
 <form id="test-form" action="test" style="width: 300px;height: 300px;background-color: #eee">
     <legend>请选择想要学习的编程语言：</legend>
     <fieldset>
-        <p><label class="selectAll"><input type="checkbox"> <span class="selectAll">全选</span><span class="deselectAll">全不选</span></label> <a href="#0" class="invertSelect">反选</a></p>
+        <p><label class="selectAll"><input type="checkbox"> <span class="selectAll">全选</span><span class="deselectAll">全不选</span></label> <a href="javascript:;" class="invertSelect">反选</a></p>
         <p><label><input type="checkbox" name="lang" value="javascript"> JavaScript</label></p>
         <p><label><input type="checkbox" name="lang" value="python"> Python</label></p>
         <p><label><input type="checkbox" name="lang" value="ruby"> Ruby</label></p>
@@ -81,35 +82,37 @@ tags: [demo]
         let list=$('input[name=lang]');
         let checkList=$('input[name=lang]:checked');
         let notChecked=$('input[name=lang]').not('input:checked');
+        //选中的变为未选中，未选中变为选中
         checkList.prop('checked',false);
         notChecked.prop('checked',true);
-
+        
         let checkList1=$('input[name=lang]:checked');
-        if(checkList1.length==0){
-            $('.selectAll input:first-child').prop('checked',false);
-            selectAllLabel.show();
-            deselectAllLabel.hide();
-        }else{
+        if(checkList1.length==list.length){
             $('.selectAll input:first-child').prop('checked',true);
             selectAllLabel.hide();
             deselectAllLabel.show();
+        }else{
+            $('.selectAll input:first-child').prop('checked',false);
+            selectAllLabel.show();
+            deselectAllLabel.hide();
         }
-
 
     });
 
     $('input[name=lang]').on('click',function () {
+        let list=$('input[name=lang]');
         let checkList=$('input[name=lang]:checked');
 
-        if(checkList.length==0){
-            $('.selectAll input:first-child').prop('checked',false);
-            selectAllLabel.show();
-            deselectAllLabel.hide();
-        }else {
+        if(checkList.length==list.length){
             $('.selectAll input:first-child').prop('checked',true);
             selectAllLabel.hide();
             deselectAllLabel.show();
+        }else{
+            $('.selectAll input:first-child').prop('checked',false);
+            selectAllLabel.show();
+            deselectAllLabel.hide();
         }
+
     })
 
 </script>
@@ -117,7 +120,6 @@ tags: [demo]
 </html>
 
 ### 代码 ###
-	
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -129,7 +131,7 @@ tags: [demo]
 	<form id="test-form" action="test" style="width: 300px;height: 300px;background-color: #eee">
 	    <legend>请选择想要学习的编程语言：</legend>
 	    <fieldset>
-	        <p><label class="selectAll"><input type="checkbox"> <span class="selectAll">全选</span><span class="deselectAll">全不选</span></label> <a href="#0" class="invertSelect">反选</a></p>
+	        <p><label class="selectAll"><input type="checkbox"> <span class="selectAll">全选</span><span class="deselectAll">全不选</span></label> <a href="javascript:;" class="invertSelect">反选</a></p>
 	        <p><label><input type="checkbox" name="lang" value="javascript"> JavaScript</label></p>
 	        <p><label><input type="checkbox" name="lang" value="python"> Python</label></p>
 	        <p><label><input type="checkbox" name="lang" value="ruby"> Ruby</label></p>
@@ -178,35 +180,37 @@ tags: [demo]
 	        let list=$('input[name=lang]');
 	        let checkList=$('input[name=lang]:checked');
 	        let notChecked=$('input[name=lang]').not('input:checked');
+	        //选中的变为未选中，未选中变为选中
 	        checkList.prop('checked',false);
 	        notChecked.prop('checked',true);
-	
+	        
 	        let checkList1=$('input[name=lang]:checked');
-	        if(checkList1.length==0){
-	            $('.selectAll input:first-child').prop('checked',false);
-	            selectAllLabel.show();
-	            deselectAllLabel.hide();
-	        }else{
+	        if(checkList1.length==list.length){
 	            $('.selectAll input:first-child').prop('checked',true);
 	            selectAllLabel.hide();
 	            deselectAllLabel.show();
+	        }else{
+	            $('.selectAll input:first-child').prop('checked',false);
+	            selectAllLabel.show();
+	            deselectAllLabel.hide();
 	        }
-	
 	
 	    });
 	
 	    $('input[name=lang]').on('click',function () {
+	        let list=$('input[name=lang]');
 	        let checkList=$('input[name=lang]:checked');
 	
-	        if(checkList.length==0){
-	            $('.selectAll input:first-child').prop('checked',false);
-	            selectAllLabel.show();
-	            deselectAllLabel.hide();
-	        }else {
+	        if(checkList.length==list.length){
 	            $('.selectAll input:first-child').prop('checked',true);
 	            selectAllLabel.hide();
 	            deselectAllLabel.show();
+	        }else{
+	            $('.selectAll input:first-child').prop('checked',false);
+	            selectAllLabel.show();
+	            deselectAllLabel.hide();
 	        }
+	
 	    })
 	
 	</script>
