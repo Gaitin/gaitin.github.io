@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "全选，反选 "
+title:  "checkBoxDemo"
 date:   2017-05-25 17:07:35 +0800
 categories: demo
+tags: [demo]
 ---
-
+### checkBoxDemo ###
 
 
 绑定合适的事件处理函数，实现以下逻辑：
@@ -113,7 +114,7 @@ categories: demo
 
 </script>
 </body>
-</html>`
+</html>
 
 ### 代码 ###
 	
