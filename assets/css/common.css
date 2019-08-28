@@ -157,13 +157,13 @@
     margin-top: 8px;
     margin-bottom: 0;
     font-size: 18px;
-    color: #666;
+    color:rgba(46,48,57,1)
 }
 
 .post-list-meta {
     margin-top: 8px;
     margin-bottom: 0;
-    color: #888;
+    color:rgba(46,48,57,1);
 }
 
 .post-list-meta, .post-list-meta.octicon {

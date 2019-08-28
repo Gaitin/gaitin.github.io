@@ -2,7 +2,7 @@
 
 .site-header{
     color: #fff;
-    background: #4183c4;
+    background: transparent;
 }
 
 .site-header #site-header-brand {
@@ -16,6 +16,10 @@
 .site-header a:hover {
     color: #fff;
 }
+body {
+    position: relative;
+}
+
 body:after{
     content: "";
     width:100%;
@@ -25,11 +29,12 @@ body:after{
     top:0;
     background: url("../images/bg.jpg") no-repeat fixed;
     filter: blur(3px);
+    background-size: cover;
     z-index: -1;
 }
 
 .jumbotron {
-    background: #4183c4;
+    background: transparent;
 }
 
 .site-header.site-header-nav-scrolled a {
