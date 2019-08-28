@@ -16,10 +16,7 @@
 .site-header a:hover {
     color: #fff;
 }
-.content {
-
-}
-.content:after{
+.body:after{
     content: "";
     width:100%;
     height:100%;
@@ -27,7 +24,7 @@
     left:0;
     top:0;
     background: url("../images/bg.jpg") no-repeat fixed;
-    filter: blur(4px);
+    filter: blur(3px);
     z-index: -1;
 }
 
